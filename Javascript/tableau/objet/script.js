@@ -48,3 +48,64 @@ if(demande_remise == "oui") {
 else {
     alert("non")
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var nombre1;
+var nombre2;
+var operation;
+var resultat;
+
+
+nombre1   = parseFloat(window.prompt('Saisissez un premier nombre :'));
+nombre2   = parseFloat(window.prompt('Saisissez un deuxième nombre :'));
+operation = window.prompt('Quelle opération mathématique souhaitez-vous effectuer ?');
+
+
+switch(operation)
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
