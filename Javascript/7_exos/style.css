@@ -1,0 +1,24 @@
+.rectangle{
+    background-color: royalblue;
+    width: 400px;
+    height: 300px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    }
+    .rectangle.good{
+        background-color: limegreen;
+        transition : background-color 1s ease-out 1s;
+    }
+    .rectangle.important{
+        background-color: firebrick;
+        transition : background-color 1s ease-out 1s;
+    }
+    .rectangle.hide{
+        display: none;
+        transition : background-color 1s ease-out 1s;
+    }
+
+button{
+    width: 400px;
+    height: 40px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exos</title>
+    </head>
+    <body>
+        <h1 id="wow">Exercices - écouteurs d'évènements</h1>
+        <h3>## Enoncé</h3>
+        <a href="http://sharemycode.fr/7g3"></a>
+        <p>Construire un programme affichant un rectangle de couleur qui réagit à différentes interactions avec la souris de l'utilisateur.</p>
+        <h3>## Consignes</h3>
+        <h5>### HTML</h5>
+            <ul>Dans l'en-tête de la page :
+                <li>Ajouter un titre au programme : "Gestion de la Souris".</li>
+                <li>Créer un bouton (*id : toggle-rectangle*) ayant pour intitulé "Cacher / Afficher le rectangle".</li>
+            </ul>
+            <ul>Dans la partie principale de la page :
+                <li>Ajouter des paragraphes de texte expliquant ce que le programme peut faire (lire ci-dessous les interactions).</li>
+                <li>Créer une balise **div** vide (*class : rectangle*) pour le rectangle.</li>
+            </ul>
+
+        <h5>### CSS</h5>
+        <ul>
+            <li>Le rectangle est bleu (*royalblue*), de taille 400x300 pixels et possède des coins arrondis.</li>
+            <li>Lorsqu'on applique la classe *good* en plus au rectangle, il devient vert (*limegreen*).</li>
+            <li>Lorsqu'on applique la classe *important* en plus au rectangle, il devient rouge (*firebrick*).</li>
+            <li>Le changement de couleur du rectangle doit s'animer.</li>
+            <li>Ajouter le CSS nécessaire restant pour que le programme fonctionne.</li>
+        </ul>
+        <h5>### Interactions</h5>
+            <ul>
+                <li>Quand on clique sur le bouton *toggle-rectangle*, cela cache ou affiche le rectangle.</li>
+                <li>Quand la souris se déplace à l'intérieur du rectangle il devient rouge; il reprend sa couleur originale quand la souris n'est plus dedans.</li>
+                <li>Quand on double-clique sur le rectangle il devient vert.</li>
+            </ul>
+
+        <h5>## Remarques</h5>
+            <ul>
+                <li>Organiser le code en trois parties : les variables, les fonctions et enfin le code principal.</li>
+                <li>Nommer correctement les gestionnaires d'évènements pour qu'ils aient un sens.</li>
+            </ul>
+
+            <hr>
+            <ol>
+                <li>cibler l'élément suer lequel on veut détecter un évènement utilisateur</li>
+                <li>poser un écouteur d'évènement sur cet élément</li>
+                <li>créer la fonction qui sera appelée quand l'évènement est détecté</li>
+            </ol>
+
+            <p>Exemple :</p>
+            <p>&ltscript></p>
+
+            <p>// 1 Cibler l'élement sur lequel je veux poser un écouteur d'event</p>
+            <p>var button = document.getElementById('#btn');</p>
+            <p>// 3 Créer la fonction qui sera appelée quand l'évenement click est détecté</p>
+            <p>function sayHello() {</p>
+            <p>alert("Hey Hello!!!");</p>
+            <p>}</p>
+            <p>// 2 poser un écouteur d'évenement sur l'élement préalablement sélectionné</p>
+            <p>button.addEventListener('click', sayHello);</p>
+            <p>// DANS CET EXERCICE VOUS AVEZ BESOIN DE MODIFIER LE DOM AVEC :</p>
+            <p>// elt.classList.add('maclass');</p>
+            <p>// elt.classList.remove('maclass');</p>
+            <p>// elt.classList.toggle('maclass');</p>
+            <p>//  elt.classList.toggle('hide');</p>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
