@@ -1,0 +1,14 @@
+td{
+    background-color: lightgray;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+tr{
+    border: 1px solid black;
+}
+.same-nb{
+    background-color: magenta;
+    color: white;
+}
