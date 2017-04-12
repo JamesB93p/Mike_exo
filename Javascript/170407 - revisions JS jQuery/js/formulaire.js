@@ -40,3 +40,20 @@ $('.btnsubmit').on('click', function() {
 
 
 })
+
+$('.btnsubmit').on('click', function() {
+    event.preventDefault();
+    var prenom = $('#obligprenom').val();
+    // console.log(prenom);
+    var message = $('#msg');
+    if (prenom === "") {
+        $('#obligprenom').closest('div.form-group').addClass('has-error');
+        message.addClass('error');
+        var noPrenom = $('.error');
+        var msgNoPrenom = "Vous n'avez pas renseigné votre prenom";
+        console.log(msgNoPrenom);
+        var noPrenom = $('.error');
+        noPrenom[0].innerHTML = msgNoPrenom;
+    }
+    
+})

@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+}
+
+.container-fluid{
+    height: 40px;
+    background-color: darkblue;
+}
+
+.ohmy{
+    color: #F0F9FE;
+}
+
+h1{
+    height: 150px;
+    background-color: green;
+    background: url('img/background.png');
+}
