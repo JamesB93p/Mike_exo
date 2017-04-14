@@ -29,6 +29,7 @@ INSERT INTO abonne (id_abonne, prenom) VALUES
 (2, 'Benoît'),
 (3, 'Chloe'),
 (4, 'Laura');
+(5, 'James');
 
 INSERT INTO emprunt (id_emprunt, id_livre, id_abonne, date_sortie, date_rendu) VALUES
 (1, 100, 1, '2014-12-17', '2014-12-18'),
