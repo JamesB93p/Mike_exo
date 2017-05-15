@@ -4,16 +4,11 @@
 2. traitement permettant d'afficher le prix en passant par la fonction déclarée calcul()
 3. Faites en sorte de garder le dernier fruit selectionné et le dernier poids saisie dans le formulaire lorsqu'il est validé
 */
-
-if ($_POST)
+include("fonction.inc.php");
+if($_POST)
 {
-    include("fonction.inc.php");
-
-    echo calcul($_POST['fruits'], $_POST['poids']);
-
-    echo '<pre>'; print_r($_POST); echo '</pre>';
+	echo calcul($_POST['fruits'],$_POST['poids']);
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,14 +25,14 @@ if ($_POST)
 		<form method="post" action=""><!-- method : comment vont circuler les données ? - action: url de destination -->
 			<label for="prenom">Fruits</label>
 			<select name="fruits">
-				<option value="cerises" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "cerises") echo "selected";?> >Cerises</option>
-				<option value="bananes" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "bananes") echo "selected";?>>Bananes</option>
-				<option value="peches" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "peches") echo "selected";?>>Pêches</option> <!-- SI il y a un fruit selectionné dans le formulaire et que le fruit selectionner est "pêches", selectionne le fruit peches --> 
-				<option value="pommes" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "pommes") echo "selected";?>>Pommes</option>
+				<option value="cerises" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "cerises") echo "selected"; ?>>Cerises</option>
+				<option value="bananes" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "bananes") echo "selected"; ?>>Bananes</option>
+				<option value="peches" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "peches") echo "selected"; ?>>Pêches</option><!-- SI il y a un fruit selectionné dans le formaulaire et que le fruit selectionné est "peches", selectionne le fruit peches -->
+				<option value="pommes" <?php if(isset($_POST['fruits']) && $_POST['fruits'] == "pommes") echo "selected"; ?>>Pommes</option>
 			</select><br><!-- il ne faut surtout pas oublier les name sur le formulaire HTML -->
 			<br>
 			<label for="poids">Poids</label>
-			<input id="poids" name="poids" value="<?php if(isset($_POST['poids'])) echo $_POST['poids'];?>"><br><!-- il ne faut surtout pas oublier les name sur le formulaire HTML -->
+			<input id="poids" name="poids" value="<?php if(isset($_POST['poids'])) echo $_POST['poids']; ?>"><br><!-- il ne faut surtout pas oublier les name sur le formulaire HTML -->
 			<br>
 			<input type="submit" value="calculer">
 		</form>

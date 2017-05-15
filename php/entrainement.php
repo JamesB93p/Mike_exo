@@ -145,12 +145,12 @@ $var2 = ""; // chaine vide
 
 if(empty($var1))
 {
-    echo '0, vide ou non définie<br><br>'; // empty: test si c'est à 0, vide ou non définie
+	echo '0, vide ou non définie<br><br>'; // empty: test si c'est à 0, vide ou non définie
 }
 
 if(isset($var2))
 {
-    echo 'var2 existe et est définie par rien<br><br>'; // isset : test l'existance d'une variable
+	echo 'var2 existe et est définie par rien<br><br>'; // isset : test l'existance d'une variable
 }
 
 //------------------------------------------------------------
@@ -160,11 +160,11 @@ $c = 2;
 
 if($a > $b) // si A est supérieur à B
 {
-    echo "A est bien supérieur à B<br><hr>"; // instruction d'affichage
+	echo "A est bien supérieur à B<br><hr>"; // instruction d'affichage
 }
 else // sinon... cas par défault
 {
-    echo "Non c'est B qui est supérieur à A<br>";
+	echo "Non c'est B qui est supérieur à A<br>";
 }
 
 //-------------------------------------------------------------
@@ -175,15 +175,15 @@ $c = 2;
 */
 if($a > $b && $b > $c) // Si A est supérieur à B ET que B est supérieur à C
 {
-    echo "OK pour les 2 conditions<br>"; // instruction d'affichage
+	echo "OK pour les 2 conditions<br>"; // instruction d'affichage
 }
 if($a == 9 || $b > $c)// Si la valeur de A est égal à 9 OU que B est supérieur à C, le double = permet de comparé la valeur à l'intérieru de la variable
 {
-    echo "OK pour au moins l'une des 2 conditions<br>"; // instruction d'affichage
+	echo "OK pour au moins l'une des 2 conditions<br>"; // instruction d'affichage
 }
 else // cas par défault
 {
-    echo "Nous sommes dans le else";
+	echo "Nous sommes dans le else";
 }
 
 //---------------------------------------------------------------
@@ -194,15 +194,15 @@ $c = 2;
 */
 if($a == 8) // Si la valeur de A est égal à 8
 {
-    echo "1 - A est égal à 10<br>"; // instruction d'affichage
+	echo "1 - A est égal à 10<br>"; // instruction d'affichage
 }
 elseif($a != 10) // Sinon SI A est différent de 10
 {
-    echo "2 - A est différent de 10<br>"; // instruction d'affichage
+	echo "2 - A est différent de 10<br>"; // instruction d'affichage
 }
 else // sinon... cas par défault
 {
-    echo "3 - tout le monde a faux<br>";
+	echo "3 - tout le monde a faux<br>";
 }
 
 // Avec des elseif, si la condition est respectée, le script s'arrete et les conditions suivantes ne sont pas évaluées, au contraire en posant plusieurs conditions if, elles seront toute évaluées même si les conditions précedentes sont respectées.
@@ -210,10 +210,10 @@ else // sinon... cas par défault
 // Condition exclusive
 if($a == 10 XOR $b == 4) // XOR : seulement l'une des 2 conditions doit être valide
 {
-    echo 'ok condition exculsive<br>'; // si les 2 conditions sont bonnes ou mauvaise, nous ne rentrons pas ici
+	echo 'ok condition exculsive<br>'; // si les 2 conditions sont bonnes ou mauvaise, nous ne rentrons pas ici
 }
 else{
-    echo "Les deux conditions sont soient bonne ou mauvaise";
+	echo "Les deux conditions sont soient bonne ou mauvaise";
 }
 
 //---------------------------------------------------------------
@@ -229,7 +229,7 @@ echo gettype($vara) . '<br>';
 echo gettype($varb) . '<br>';
 if($vara === $varb)
 {
-    echo "il s'agit de la la même chose";
+	echo "il s'agit de la la même chose";
 }
 // Avec la présence, le triple égal, le test ne fonctionne pas car les types des variables sont différents. INT(entier) n'est pas égal à STRING(chaine de caractère)
 // = affectation
@@ -244,47 +244,47 @@ echo '<hr><h2> Conditions SWITCH </h2>';
 $couleur = 'jaune';
 switch($couleur)
 {
-    case 'bleu':
-    echo "Vous aimez le bleu";
-    break;
+	case 'bleu':
+	echo "Vous aimez le bleu";
+	break;
 
-    case 'rouge':
-    echo "Vous aimez le rouge";
-    break;
+	case 'rouge':
+	echo "Vous aimez le rouge";
+	break;
 
-    case 'vert':
-    echo "Vous aimez le vert";
-    break;
+	case 'vert':
+	echo "Vous aimez le vert";
+	break;
 
-    default: // cas par défault, si l'on ne rentre pas dans les cas précédent
-    echo "Vous n'aimez ni le bleu, ni le rouge, ni le vert";
-    break;
+	default: // cas par défault, si l'on ne rentre pas dans les cas précédent
+	echo "Vous n'aimez ni le bleu, ni le rouge, ni le vert";
+	break;
 }
 
 // Exercice : Pouvez-vous faire la même condition switch avec des if/else? est-ce possible?
 $couleur = 'jaune';
 if($couleur == 'bleu')
 {
-    echo "Vous aimez le bleu";
+	echo "Vous aimez le bleu";
 }
 elseif($couleur == 'rouge')
 {
-    echo "Vous aimez le rouge";
+	echo "Vous aimez le rouge";
 }
 elseif($couleur == 'vert')
 {
-    echo "Vous aimez le vert";
+	echo "Vous aimez le vert";
 }
 else{
-    echo "Vous n'aimez ni le bleu, ni le rouge, ni le vert";
+	echo "Vous n'aimez ni le bleu, ni le rouge, ni le vert";
 }
 //--------------------------------------------------------------
 echo "<hr><h2>Structure itérative : boucle</h2>";
 $i = 0; // valeur de départ
 while($i < 3) // tant que $i est inférieur à 3
 {
-    echo "$i---";
-    $i++; // ceci est une forme contractée de : $i = $i + 1
+	echo "$i---";
+	$i++; // ceci est une forme contractée de : $i = $i + 1
 }
 
 echo "<br>";
@@ -292,14 +292,14 @@ echo "<br>";
 $i = 0;
 while($i < 3)// tant que $i est inférieur à 3
 {
-    if($i == 2)
-    {
-        echo $i; // je rentre 1 fois ici
-    }
-    else{
-        echo "$i---"; // je rentre 2 fois ici
-    }
-    $i++; // incrémentation du "compteur" pour que la boucle puisse tourner
+	if($i == 2)
+	{
+		echo $i; // je rentre 1 fois ici
+	}
+	else{
+		echo "$i---"; // je rentre 2 fois ici
+	}
+	$i++; // incrémentation du "compteur" pour que la boucle puisse tourner
 }
 //---------------------------------------------------------------
 // Boucle for
@@ -307,7 +307,7 @@ echo '<br>';
 
 for($j = 0; $j < 16; $j++) // valeur de départ ; condition d'entrée ; incrémentation
 {
-    echo $j . "<br>";
+	echo $j . "<br>";
 }
 
 // exercice : afficher 30 options via une boucle
@@ -321,7 +321,7 @@ echo "<br>";
 echo '<select>';
 for($j = 0; $j <= 30; $j++)
 {
-    echo "<option>" . $j . "</option>";
+	echo "<option>" . $j . "</option>";
 }
 echo '</select>';
 
@@ -330,7 +330,7 @@ echo '<br>';
 echo '<select>';
 for($j = 30; $j > 0; $j--) // décrémentation, equivault à $j = $j - 1
 {
-    echo "<option>" . $j . "</option>";
+	echo "<option>" . $j . "</option>";
 }
 echo '</select>';
 
@@ -340,7 +340,7 @@ echo "<table border='1' style='border-collapse: collapse;'>";
 echo "<tr>";
 for($j = 0; $j <= 9; $j++)
 {
-    echo "<td>" . $j . "</td>";
+	echo "<td>" . $j . "</td>";
 }
 echo "</tr>";
 echo "</table>";
@@ -351,12 +351,12 @@ echo '<br>';
 echo "<table border='1' style='border-collapse: collapse;'>";
 for($ligne = 0; $ligne < 10; $ligne++)
 {
-    echo '<tr>';
-    for($cellule = 0; $cellule < 10; $cellule++)
-    {
-        echo "<td>" . (10 * $ligne + $cellule) . "</td>";
-    }
-    echo '</tr>';
+	echo '<tr>';
+	for($cellule = 0; $cellule < 10; $cellule++)
+	{
+		echo "<td>" . (10 * $ligne + $cellule) . "</td>";
+	}
+	echo '</tr>';
 }
 echo "</table>";
 //-----------------------------------------------------
@@ -367,13 +367,13 @@ $compteur = 0;
 echo "<table border='1' style='border-collapse: collapse;'>";
 for($ligne = 0; $ligne < 10; $ligne++)
 {
-    echo '<tr>';
-    for($cellule = 0; $cellule < 10; $cellule++)
-    {
-        echo "<td>" . $compteur . "</td>";
-        $compteur++;
-    }
-    echo '</tr>';
+	echo '<tr>';
+	for($cellule = 0; $cellule < 10; $cellule++)
+	{
+		echo "<td>" . $compteur . "</td>";
+		$compteur++;
+	}
+	echo '</tr>';
 }
 echo "</table>";
 //-----------------------------------------------------------
@@ -446,7 +446,7 @@ echo '<hr><h2>Fonctions utilisateurs</h2>';
 // Nous aurions pu donner un autre nom à cette fonction, c'est nous qui decidons
 function separation() // déclaration d'une fonction prévue pour ne pas recevoir d'arguments
 {
-    echo "<hr><hr><hr>";
+	echo "<hr><hr><hr>";
 }
 
 separation(); // execution de la fonction
@@ -456,7 +456,7 @@ separation(); // execution de la fonction
 
 function bonjour($qui) // $qui, ça ne sort pas de nul part. Cela permet de recevoir un argument, il s'agit d'une variable de réception
 {
-    echo "Bonjour $qui <br>";
+	echo "Bonjour $qui <br>";
 }
 $prenom = "Stevy";
 // execution
@@ -466,7 +466,7 @@ bonjour($prenom); // l'argument peut être aussi une variable
 //-------------------------------------------------------------
 function appliqueTva($nombre)
 {
-    return $nombre * 1.2;// (1+20/100) calcul du taux de tva à 20%, une fonction peut retourner quelque chose (à ce moment la on quitte la fonction)
+	return $nombre * 1.2;// (1+20/100) calcul du taux de tva à 20%, une fonction peut retourner quelque chose (à ce moment la on quitte la fonction)
 }
 
 echo appliqueTva(150);// on execute la fonction, on place un echo puisque l'on utilise le mot clé return à l'intérieur de la fonction
@@ -476,8 +476,8 @@ echo '<br>';
 
 function appliqueTva2($nombre, $taux)// une fonction peut recevoir plusieurs arguments
 {
-    return $nombre * $taux;
-    //return $nombre * (1+$taux/100); calcul du taux
+	return $nombre * $taux;
+	//return $nombre * (1+$taux/100); calcul du taux
 }
 
 echo appliqueTva2(150,1.2);
@@ -487,7 +487,7 @@ echo '<br>';
 meteo("hiver", 15);// il est possible d'executer une fonction avant de l'avoir déclarée
 function meteo($saison, $temperature)// avec 2 arguments à receptionner et par conséquent à envoyer
 {
-    echo "Nous sommes en $saison et il fait $temperature degre(s) <br>";
+	echo "Nous sommes en $saison et il fait $temperature degre(s) <br>";
 }
 
 // Exercice : gérer le S de degréS avec un if/else
@@ -495,14 +495,14 @@ function meteo($saison, $temperature)// avec 2 arguments à receptionner et par 
 function exOmeteo($saison, $temperature)
 {
 
-    if($temperature > 1 || $temperature < -1)
-    {
-        echo "Nous sommes en $saison et il fait $temperature degrés";
-    }
-    else
-    {
-        echo "Nous sommes en $saison et il fait $temperature degré";
-    }
+	if($temperature > 1 || $temperature < -1)
+	{
+		echo "Nous sommes en $saison et il fait $temperature degrés";
+	}
+	else
+	{
+		echo "Nous sommes en $saison et il fait $temperature degré";
+	}
 }
 
 exOmeteo("hiver", 0);
@@ -511,8 +511,8 @@ echo '<br>';
 $pays = "France";
 function affichagePays()
 {
-    global $pays;// le echo qui suit ne fonctionnerait pas si nous n'avions pas mis le mot-clé global pour importer tout ce qui est déclaré de l'espace global dans l'espace local
-    echo $pays;
+	global $pays;// le echo qui suit ne fonctionnerait pas si nous n'avions pas mis le mot-clé global pour importer tout ce qui est déclaré de l'espace global dans l'espace local
+	echo $pays;
 }
 affichagePays();
 // lorsqu'on travail à l'intérieur d'une fonction en PHP, on se trouve dans l'espace local, tout ce qui est déclaré à l'extérieur d'une fonction se trouve dans l'espace global(espace par défault)
@@ -520,9 +520,9 @@ echo '<br>';
 //--------------------------------------------------------------
 function jourSemaine()
 {
-    $jour = "lundi";// variable locale
-    return $jour; // une fonction peut retourner quelque chose(à ce moment la on quitte la fonction)
-    echo "ALLO";
+	$jour = "lundi";// variable locale
+	return $jour; // une fonction peut retourner quelque chose(à ce moment la on quitte la fonction)
+	echo "ALLO";
 }
 //echo $jour; ne fonctionne pas car cette variable n'est connu qu'à l'intérieur de la fonction
 echo jourSemaine();// on éxecute la fonction
@@ -543,7 +543,7 @@ echo '<pre>'; print_r($liste); echo '</pre>';// print_r est une instruction d'af
 // contexte : bien souvent, lorsque l'on recuperera des informations en BDD, nous les retrouverons sous forme d'ARRAY
 
 //----------------------------------------------------------------
-echo '<hr><h2>Boucle foreach pour les tazbleaux de données ARRAY</h2>';
+echo '<hr><h2>Boucle foreach pour les tableaux de données ARRAY</h2>';
 
 $tab[] = "France";
 $tab[] = "Italie";
@@ -561,13 +561,13 @@ echo '<hr>';
 // la boucle foreach est un moyen simple de passer en revue un tableau. Foreach fonctionne uniquements sur les tableaux, elle retournera une erreur si vous tentez de l'utiliser sur une variable d'un autre type.
 foreach($tab as $info)// le mot as fait partie du langage et est obligatoire
 {
-    echo $info . '<br>'; // on affiche successivement les éléments du tableau
+	echo $info . '<br>'; // on affiche successivement les éléments du tableau
 }
 
 echo '<hr>';
 foreach($tab as $indices => $valeur) // quand il y a 2 variables, la 1ère parcours la colonne des indicces et la seconde parcours la colonne des valeurs
 {
-    echo $indices . ' : ' . $valeur . '<br>'; // on affiche l'élelement du tableau parcouru  via $indice et $valeur
+	echo $indices . ' : ' . $valeur . '<br>'; // on affiche l'élelement du tableau parcouru  via $indice et $valeur
 }
 echo '<hr>';
 $couleur = array("j" => "jaune", "v" => "vert", "r" => "rouge", "o" => "orange"); // nous pouvons choisir les indices
@@ -583,7 +583,7 @@ echo implode("-", $couleur) . "<br>"; // implode() est une fonction prédéfinie
 echo '<hr><h2> Tableau multidimensionnel </h2>';
 // Nous parlons de tableau multidimansionnel quand un tableau est contenu dans un autre tableau
 $tab_multi = array(0 => array("prenom" => "Grégory", "nom" => "Lacroix"),
-1 => array("prenom" => "Julien", "nom" => "Cottet"));
+					1 => array("prenom" => "Julien", "nom" => "Cottet"));
 // il est possible de choisir le nom des indices d'un array
 echo '<pre>'; print_r($tab_multi); echo '</pre>';
 
@@ -609,24 +609,25 @@ $_SESSION -> contient les informations de la session en cours
 echo '<pre>'; print_r($_SERVER); echo '</pre>';
 echo '<hr>';
 
-//----------------------------------------------------------------------------
-
-echo '<hr><h2>Objets</h2>';
-// Un objet est un autre type de données. Un peu à la maniere d'un ARRAY, il permet de regrouper des informations.
+//--------------------------------------------------------------------
+echo '<hr><h2> Objets </h2>';
+// un objet est un autre type de données.  Un peu à la manière d'un ARRAY, il permet de regrouper des informations.
 // Cependant, cela va beaucoup plus loin car on peux y déclaré des variables mais aussi des fonctions.
 
 class Etudiant
 {
-    public $prenom = 'James'; // Public permet de préciser que l'élément sera accessible de partout (il y a aussi protected et private)
-    public $age = 60;
-    public function pays()
-{
-    return "France";
+	public $prenom = 'Grégory'; // public permet de préciser que l'élément sera accéssible de partout (il y a aussi protected et private)
+	public $age = 25;
+	public function pays()
+	{
+		return "France";
+	}
 }
-}
-$objet = new Etudiant(); // New est un mot clé permettant d'instancier la classe et d'en faire un objet.
+
+$objet = new Etudiant();// new est un mot clé permettant d'instancier la classe et d'en faire un objet.
 
 echo '<pre>'; print_r($objet); echo '</pre>';
-echo $objet->prenom . "<br>"; // nous pouvons piocher dans un ARRAY avec les crochets [], nous devons piocher dans un objet avec une fleche ->
+
+echo $objet->prenom . "<br>"; // nous pouvons piocher dans un ARRAY avec les crochets [], nous devons piocher dans un OBJET avec une fleche ->
 echo $objet->age . "<br>";
-echo $objet->pays() . "<br>"; // appel d'une méthode toujours avec des paranthéses
+echo $objet->pays() . "<br>"; // appel d'une méthode toujours avec des paranthèses
