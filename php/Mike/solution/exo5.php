@@ -10,19 +10,14 @@ if(!empty($_POST))
 	else if($mike[0] != "Mike")
 		echo "Premiere valeur incorrect";
 	else if(!crypt_digit($mike[1]))
-	echo "Votre parametre $mike[1] n'ai pas correct";
+		echo "Votre parametre $mike[1] n'ai pas correct";
 	else if(!crypt_digit($mike[2]))
-	echo "Votre parametre $mike[2] n'ai pas correct";
-	else if( !is_int(intval($mike[1])) || !is_int(intval(mike[2])))
-	echo "Votre parametre n'ai pas correct";
-	else if( intval($mike[1]) < 0 || intval($mike[2] < 0))
-	echo "Votre parametre n'ai pas correct";
-
+		echo "Votre parametre $mike[2] n'ai pas correct";
 	else
-	{
-		echo "Parametre 1 : $mike[1]<br/>Parametre 2 : $mike[2]";
+		{
+			$result = $mike[1] <=> $mike
+		}
 	}
-}
  ?>
 
 <!DOCTYPE html>
@@ -45,7 +40,7 @@ if(!empty($_POST))
 	<body>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<form method="POST">
+				<form method="post">
 					<div class="form-group">
 						<label for="text">Entre votre valeur:</label>
 						<input type="text" class="form-control" id="Mike" name="Mike">
