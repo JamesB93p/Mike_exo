@@ -13,11 +13,22 @@ if(!empty($_POST))
 		echo "Votre parametre $mike[1] n'ai pas correct";
 	else if(!crypt_digit($mike[2]))
 		echo "Votre parametre $mike[2] n'ai pas correct";
-	else
+	else{
+		/* simple */
+		/*if($mike[1] > $mike[2])
+		echo "La puissance est $mike[1]";
+		else if ($mike[2] > $mike[1])
+		echo "La puissance est $mike[2]";
+		else
 		{
-			$result = $mike[1] <=> $mike
+			echo "equals";*/
+
+			/* Ternair */
+			echo ($mike[1] > $mike[2])?
+			"La puissance est $mike[1]": ($mike[2] > $mike[1])?"La puissance est $mike[2]":"equals";
 		}
 	}
+}
  ?>
 
 <!DOCTYPE html>
