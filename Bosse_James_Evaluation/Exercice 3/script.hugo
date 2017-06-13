@@ -1,0 +1,26 @@
+$(function(){
+    /* "#" => id
+    ".form" => Class form
+    "form" => Balise form
+    */
+    $("form").submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            url: "formulaire_voiture.php",
+            method: "POST",
+            data: {
+                marque: $("#marque").val(),
+                modele: $("#modele").val(),
+                annee: $("#annee").val(),
+                couleur: $("#couleur").val(),
+            }
+        })
+        .done(function(result){
+            console.log(result)
+            $("#message").html('<div class="alert alert-success">  <strong>Succes!</strong> Vehicule ajoute.</div>');
+        })
+        .fail(function(){
+            $("#message").html('<div class="alert alert-danger"> <strong>Erreur!</strong> Vehicule non ajoute. Erreur.</div>');
+        })
+    });
+})

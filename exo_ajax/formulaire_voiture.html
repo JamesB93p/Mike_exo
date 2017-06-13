@@ -1,0 +1,80 @@
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <form class="form-horizontal" method="post">
+            <fieldset>
+
+                <div id="message"></div>
+
+                <!-- Form Name -->
+                <legend>Ajouter un vehicule</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="marque">Marque du vehicule</label>
+                    <div class="col-md-4">
+                        <input id="marque" name="marque" type="text" placeholder="Audi" class="form-control input-md" required="">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="modele">Modèle du vehicule</label>
+                    <div class="col-md-4">
+                        <input id="modele" name="modele" type="text" placeholder="TT" class="form-control input-md" required="">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="annee">Année de creation</label>
+                    <div class="col-md-4">
+                        <input id="annee" name="annee" type="text" placeholder="2014" class="form-control input-md" required="">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="couleur">Couleur du vehicule</label>
+                    <div class="col-md-4">
+                        <input id="couleur" name="couleur" type="text" placeholder="Noir" class="form-control input-md" required="">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="nbPlace">Nombre de place</label>
+                    <div class="col-md-4">
+                        <input id="nbPlace" name="nbPlace" type="text" placeholder="4" class="form-control input-md" required="">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="nbPorte">Nombre de porte</label>
+                    <div class="col-md-4">
+                        <input id="nbPorte" name="nbPorte" type="text" placeholder="3" class="form-control input-md" required="">
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="envoy">Validation</label>
+                    <div class="col-md-4">
+                        <button id="envoy" name="envoy" class="btn btn-success">Envoyer</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
